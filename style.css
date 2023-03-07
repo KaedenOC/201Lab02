@@ -38,9 +38,16 @@ p {
 
 section {
     border-bottom: 2px solid black;
+    max-width: 500px;
+    margin: auto;
 }
 
-.favthing {
+article {
+    border-bottom: 2px solid black;
+}
+
+
+/* .favthing {
     display: inline-block;
     width: 30%;
 }
@@ -63,4 +70,4 @@ section {
 .goals {
     display: inline-block;
     width: 30%;
-}
+} */
