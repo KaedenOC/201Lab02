@@ -30,6 +30,7 @@ img {
 h2 {
     font-size: 2em;
     font-family: fantasy;
+    padding-bottom: 10px;
 }
 
 p {
@@ -39,10 +40,23 @@ p {
 section {
     border-bottom: 2px solid black;
     max-width: 500px;
-    margin: auto;
+    margin-left: 150px;
+    display: inline-block;
 }
 
+/* #listsection {
+    
+} */
+
 article {
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+ol {
+    display: inline-block;
+    margin-left: 150px;
     border-bottom: 2px solid black;
 }
 
