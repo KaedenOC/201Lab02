@@ -63,20 +63,23 @@ while (userAttempts < 4){
     let userGuess = prompt(questions[0]);
     userAttempts++
     if (userGuess == answers[0]){
-        alert("Correct!")
+        alert("Correct!");
+        break;
     } else if (userGuess < answers[0]){
         alert("Too low!");
     } else if (userGuess > answers[0]){
-        alert("Too high!")
+        alert("Too high!");
     }
     if (userAttempts === 0){
-        alert("You have 4 more attempts!")
+        alert("You have 4 more attempts!");
     } else if (userAttempts === 1){
-        alert("You have 3 more attempts!")
+        alert("You have 3 more attempts!");
     } else if (userAttempts === 2){
-        alert("You have 2 more attempts!")
+        alert("You have 2 more attempts!");
     } else if (userAttempts === 3){
-        alert("You have 1 more attempt!")
+        alert("You have 1 more attempt!");
+    } else {
+        alert("You have exhausted your attempts! I am 25 years old.");
     }
 }
 
