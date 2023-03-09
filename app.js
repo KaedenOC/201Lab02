@@ -97,6 +97,7 @@ myGame6();
 
 let uAttempts = 0
 
+function myGame7(){
 while (uAttempts < 6){
     let anotherGuess = prompt(questions[1]);
     console.log(timesRan);
@@ -111,6 +112,8 @@ while (uAttempts < 6){
     } else if (anotherGuess == answers[3]){
         alert("Thats it!");
         break;
+    } else if (anotherGuess != answers[1] || answers[2] || answers[3]){
+        alert("Incorrect");
     }
     if (uAttempts === 1){
         alert("You have 5 more attempts!");
@@ -126,13 +129,7 @@ while (uAttempts < 6){
         alert("You have exhausted all of your attempts! The numbers were 2,5, and 9!");
     }
 }
+}
+myGame7();
 
 alert("You have completed these questions using " + timesRan + " attempts!");
-
-
-
-
-
-// } else if (anotherGuess != answers[1] || answers[2] || answers[3]){
-    //     alert("Incorrect");
-    // }
