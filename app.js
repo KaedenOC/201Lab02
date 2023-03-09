@@ -107,7 +107,7 @@ while (uAttempts < 6){
     } else if (uAttempts === 4){
         alert("You have 2 more attempts!");
     } else if (uAttempts === 5){
-        alert("You have 1 more attempts!");
+        alert("You have 1 more attempt!");
     } else {
         alert("You have exhausted all of your attempts!");
     }

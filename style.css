@@ -44,9 +44,6 @@ section {
     display: inline-block;
 }
 
-/* #listsection {
-    
-} */
 
 article {
     border-bottom: 2px solid black;
@@ -60,3 +57,16 @@ ol {
     border-bottom: 2px solid black;
 }
 
+ul {
+    display: inline-block;
+    margin-left: 150px;
+    border-bottom: 2px solid black;
+}
+
+ol li {
+    list-style: number inside;
+}
+
+ul li {
+    list-style: circle inside none;
+}
