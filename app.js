@@ -50,7 +50,7 @@ let myGoal = prompt("My overall goal is to become a Developer. Yes or No?").toLo
 // console.log(myGoal);
 
 if (myGoal === "yes"){
-    alert("Thats it! Thank you " + userName + " for taking the time to answer these questions.")
+    alert("Thats it! Thank you " + userName + " for taking the time to answer these questions.");
 } else {
     alert("I'm sorry that was not the right answer. Please try again.");
 }
