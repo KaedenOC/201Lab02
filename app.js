@@ -58,10 +58,14 @@ if (myGoal === "yes"){
 let questions = ["How old am I? Pick a number between 1 and 30", "I am thinking of 3 numbers between 1 and 10. Can you guess one of them?"];
 let answers = [25, 2, 5, 9];
 let userAttempts = 0;
+let timesRan = 0;
+
 
 while (userAttempts < 4){
     let userGuess = prompt(questions[0]);
-    userAttempts++
+    console.log(timesRan);
+    timesRan++;
+    userAttempts++;
     if (userGuess == answers[0]){
         alert("Correct!");
         break;
@@ -87,7 +91,9 @@ let uAttempts = 0
 
 while (uAttempts < 6){
     let anotherGuess = prompt(questions[1]);
-        uAttempts++
+    console.log(timesRan);
+    timesRan++;
+    uAttempts++;
     if (anotherGuess == answers[1]){
         alert("You got one!");
         break;
@@ -112,6 +118,8 @@ while (uAttempts < 6){
         alert("You have exhausted all of your attempts! The numbers were 2,5, and 9!");
     }
 }
+
+alert("You have completed these questions using " + timesRan + " attempts!");
 
 
 
