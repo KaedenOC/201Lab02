@@ -55,8 +55,8 @@
 //     alert("I'm sorry that was not the right answer. Please try again.");
 // }
 
-let questions = ["How old am I? Pick a number between 1 and 30"];
-let answers = [25];
+let questions = ["How old am I? Pick a number between 1 and 30", "I am thinking of 3 numbers between 1 and 10. Can you guess what they are?"];
+let answers = [25, 2, 5, 9];
 let userAttempts = 0;
 
 while (userAttempts < 4){
@@ -83,3 +83,40 @@ while (userAttempts < 4){
     }
 }
 
+let uAttempts = 0
+
+while (uAttempts < 6){
+    let anotherGuess = prompt(questions[1]);
+        uAttempts++
+    if (anotherGuess == answers[1]){
+        alert("You got one!");
+        break;
+    } else if (anotherGuess == answers[2]){
+        alert("You got one!");
+        break;
+    } else if (anotherGuess == answers[3]){
+        alert("Thats it!");
+        break;
+    }
+    if (uAttempts === 1){
+        alert("You have 5 more attempts!");
+    } else if (uAttempts === 2){
+        alert("You have 4 more attempts!");
+    } else if (uAttempts === 3){
+        alert("You have 3 more attempts!");
+    } else if (uAttempts === 4){
+        alert("You have 2 more attempts!");
+    } else if (uAttempts === 5){
+        alert("You have 1 more attempts!");
+    } else {
+        alert("You have exhausted all of your attempts!");
+    }
+}
+
+
+
+
+
+// } else if (anotherGuess != answers[1] || answers[2] || answers[3]){
+    //     alert("Incorrect");
+    // }
