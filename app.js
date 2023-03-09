@@ -55,7 +55,7 @@ if (myGoal === "yes"){
     alert("I'm sorry that was not the right answer. Please try again.");
 }
 
-let questions = ["How old am I? Pick a number between 1 and 30", "I am thinking of 3 numbers between 1 and 10. Can you guess what they are?"];
+let questions = ["How old am I? Pick a number between 1 and 30", "I am thinking of 3 numbers between 1 and 10. Can you guess one of them?"];
 let answers = [25, 2, 5, 9];
 let userAttempts = 0;
 
@@ -109,7 +109,7 @@ while (uAttempts < 6){
     } else if (uAttempts === 5){
         alert("You have 1 more attempt!");
     } else {
-        alert("You have exhausted all of your attempts!");
+        alert("You have exhausted all of your attempts! The numbers were 2,5, and 9!");
     }
 }
 
