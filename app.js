@@ -1,8 +1,7 @@
 "use strict";
-
+let userName = ""
 function greeting(){
-
-let userName = prompt("Hello! What is your name?");
+    userName = prompt("Hello! What is your name?");
     console.log(userName);
     alert("Welcome! " + userName + " to my site.");
 }
@@ -66,7 +65,7 @@ let answers = [25, 2, 5, 9];
 let userAttempts = 0;
 let timesRan = 0;
 
-
+function myGame6(){
 while (userAttempts < 4){
     let userGuess = prompt(questions[0]);
     console.log(timesRan);
@@ -92,6 +91,9 @@ while (userAttempts < 4){
         alert("You have exhausted your attempts! I am 25 years old.");
     }
 }
+}
+myGame6();
+
 
 let uAttempts = 0
 
