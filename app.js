@@ -30,7 +30,7 @@ let answersFG = ['yes', 'yes', 'yes', 'yes'];
 let response = '';
 
 function guessingGame2(questionsFG, answersFG) {
-    response = prompt(questionsFG, answersFG);
+    response = prompt(questionsFG);
     if (response) {
         if (response === answersFG) {
         alert('Correct.');
