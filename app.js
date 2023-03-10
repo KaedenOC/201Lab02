@@ -30,9 +30,9 @@ let answersFG = ['yes', 'yes', 'yes', 'yes'];
 let response = '';
 
 function guessingGame2(questionsFG, answersFG) {
-        response = prompt(questionsFG, answersFG);
-        if (response) {
-            if (response === answersFG) {
+    response = prompt(questionsFG, answersFG);
+    if (response) {
+        if (response === answersFG) {
             alert('Correct.');
             console.log(userCorrect);
             return true;
@@ -45,8 +45,8 @@ function guessingGame2(questionsFG, answersFG) {
 }
 
 for (let i = 0; i < questionsFG.length; i++) {
-    let userCorrect = prompt(questionsFG[i], answersFG[i]);
-    if(userCorrect) {
+    let userCorrect = prompt(questionsFG[i]);
+    if(userCorrect === answersFG[i]) {
         alert('Correct');
         console.log(userCorrect);
     } else {
@@ -55,15 +55,6 @@ for (let i = 0; i < questionsFG.length; i++) {
     }
 }
 guessingGame2();
-    // let userCorrect = prompt(questionsFG[i], answersFG[i]);
-    // if (userCorrect) {
-    //     alert('Correct.');
-    //     console.log(userCorrect);
-    // } else {
-    //     alert('Incorrect.');
-    //     console.log(userCorrect);
-    // }
-    // }
 
 
 // let favFood = prompt("My favorite food is Pizza. Yes or No?").toLowerCase();
