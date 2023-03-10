@@ -18,47 +18,96 @@ function guessingGame1(){
         alert("Im sorry that was not the right answer. Please try again.");
     }
 }
-guessingGame1()
+guessingGame1();
 
+let questionTwo = 'My favorite food is Pizza. Yes or No?';
+let questionThree = 'My past career job was a UPS Package Delivery Driver Yes or No?';
+let questionFour = 'My favorite animals are Alaskan Malamutes. Yes or no?';
+let questionFive = 'My overall goal is to become a Developer. Yes or No?';
 
-let favFood = prompt("My favorite food is Pizza. Yes or No?").toLowerCase();
-// console.log(favFood);
+let questionsFG = [questionTwo, questionThree, questionFour, questionFive];
+let answersFG = ['yes', 'yes', 'yes', 'yes'];
+let response = '';
 
-if (favFood === "yes"){
-    alert("Correct! Pizza is my favorite food.");
-
-} else {
-    alert("I'm sorry that was not the right answer. Please try again.");
+function guessingGame2(questionsFG, answersFG) {
+        response = prompt(questionsFG, answersFG);
+        if (response) {
+            if (response === answersFG) {
+            alert('Correct.');
+            console.log(userCorrect);
+            return true;
+    } else {
+        alert('Incorrect.');
+        console.log(userCorrect);
+        return false;
+    }
+    }
 }
 
-let myCareer = prompt("My past career job was a UPS Package Delivery Driver Yes or No?").toLowerCase();
-// console.log(myCareer);
-
-if (myCareer === "yes"){
-    alert("Yes! That's right.");
-} else {
-    alert("I'm sorry that was not the right answer. Please try again.");
+for (let i = 0; i < questionsFG.length; i++) {
+    let userCorrect = prompt(questionsFG[i], answersFG[i]);
+    if(userCorrect) {
+        alert('Correct');
+        console.log(userCorrect);
+    } else {
+        alert('Incorrect.');
+        console.log(userCorrect);
+    }
 }
+guessingGame2();
+    // let userCorrect = prompt(questionsFG[i], answersFG[i]);
+    // if (userCorrect) {
+    //     alert('Correct.');
+    //     console.log(userCorrect);
+    // } else {
+    //     alert('Incorrect.');
+    //     console.log(userCorrect);
+    // }
+    // }
 
-alert("We are almost done!");
 
-let favAnimal = prompt("My favorite animals are Alaskan Malamutes. Yes or no?").toLowerCase();
-// console.log(favAnimal);
+// let favFood = prompt("My favorite food is Pizza. Yes or No?").toLowerCase();
+// // console.log(favFood);
 
-if (favAnimal === "yes"){
-    alert("Perfect!");
-} else {
-    alert("I'm sorry that was not the right answer. Please try again.");
-}
+// if (favFood === "yes"){
+//     alert("Correct! Pizza is my favorite food.");
 
-let myGoal = prompt("My overall goal is to become a Developer. Yes or No?").toLowerCase();
-// console.log(myGoal);
+// } else {
+//     alert("I'm sorry that was not the right answer. Please try again.");
+// }
+// }
 
-if (myGoal === "yes"){
-    alert("Thats it! Thank you " + userName + " for taking the time to answer these questions.");
-} else {
-    alert("I'm sorry that was not the right answer. Please try again.");
-}
+// questionGame
+// let myCareer = prompt("My past career job was a UPS Package Delivery Driver Yes or No?").toLowerCase();
+// // console.log(myCareer);
+
+// if (myCareer === "yes"){
+//     alert("Yes! That's right.");
+// } else {
+//     alert("I'm sorry that was not the right answer. Please try again.");
+// }
+
+// alert("We are almost done!");
+
+// let favAnimal = prompt("My favorite animals are Alaskan Malamutes. Yes or no?").toLowerCase();
+// // console.log(favAnimal);
+
+// if (favAnimal === "yes"){
+//     alert("Perfect!");
+// } else {
+//     alert("I'm sorry that was not the right answer. Please try again.");
+// }
+
+// let myGoal = prompt("My overall goal is to become a Developer. Yes or No?").toLowerCase();
+// // console.log(myGoal);
+
+// if (myGoal === "yes"){
+    
+// } else {
+//     alert("I'm sorry that was not the right answer. Please try again.");
+// }
+
+let thankYou = alert("Thats it! Thank you " + userName + " for taking the time to answer these questions.");
 
 let questions = ["How old am I? Pick a number between 1 and 30", "I am thinking of 3 numbers between 1 and 10. Can you guess one of them?"];
 let answers = [25, 2, 5, 9];
