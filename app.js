@@ -33,9 +33,9 @@ function guessingGame2(questionsFG, answersFG) {
     response = prompt(questionsFG, answersFG);
     if (response) {
         if (response === answersFG) {
-            alert('Correct.');
-            console.log(userCorrect);
-            return true;
+        alert('Correct.');
+        console.log(userCorrect);
+        return true;
     } else {
         alert('Incorrect.');
         console.log(userCorrect);
@@ -45,7 +45,7 @@ function guessingGame2(questionsFG, answersFG) {
 }
 
 for (let i = 0; i < questionsFG.length; i++) {
-    let userCorrect = prompt(questionsFG[i]);
+    let userCorrect = prompt(questionsFG[i]).toLowerCase();
     if(userCorrect === answersFG[i]) {
         alert('Correct');
         console.log(userCorrect);
