@@ -57,47 +57,6 @@ for (let i = 0; i < questionsFG.length; i++) {
 guessingGame2();
 
 
-// let favFood = prompt("My favorite food is Pizza. Yes or No?").toLowerCase();
-// // console.log(favFood);
-
-// if (favFood === "yes"){
-//     alert("Correct! Pizza is my favorite food.");
-
-// } else {
-//     alert("I'm sorry that was not the right answer. Please try again.");
-// }
-// }
-
-// questionGame
-// let myCareer = prompt("My past career job was a UPS Package Delivery Driver Yes or No?").toLowerCase();
-// // console.log(myCareer);
-
-// if (myCareer === "yes"){
-//     alert("Yes! That's right.");
-// } else {
-//     alert("I'm sorry that was not the right answer. Please try again.");
-// }
-
-// alert("We are almost done!");
-
-// let favAnimal = prompt("My favorite animals are Alaskan Malamutes. Yes or no?").toLowerCase();
-// // console.log(favAnimal);
-
-// if (favAnimal === "yes"){
-//     alert("Perfect!");
-// } else {
-//     alert("I'm sorry that was not the right answer. Please try again.");
-// }
-
-// let myGoal = prompt("My overall goal is to become a Developer. Yes or No?").toLowerCase();
-// // console.log(myGoal);
-
-// if (myGoal === "yes"){
-    
-// } else {
-//     alert("I'm sorry that was not the right answer. Please try again.");
-// }
-
 let thankYou = alert("Thats it! Thank you " + userName + " for taking the time to answer these questions.");
 
 let questions = ["How old am I? Pick a number between 1 and 30", "I am thinking of 3 numbers between 1 and 10. Can you guess one of them?"];
