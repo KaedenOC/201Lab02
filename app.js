@@ -27,26 +27,19 @@ let questionFive = 'My overall goal is to become a Developer. Yes or No?';
 
 let questionsFG = [questionTwo, questionThree, questionFour, questionFive];
 let answersFG = ['yes', 'yes', 'yes', 'yes'];
-let response = '';
 
 function guessingGame2(questionsFG, answersFG) {
-    response = prompt(questionsFG);
-    if (response) {
+    let response = prompt(questionsFG).toLowerCase();
         if (response === answersFG) {
-        alert('Correct.');
-        console.log(userCorrect);
         return true;
     } else {
-        alert('Incorrect.');
-        console.log(userCorrect);
         return false;
-    }
     }
 }
 
 for (let i = 0; i < questionsFG.length; i++) {
-    let userCorrect = prompt(questionsFG[i]).toLowerCase();
-    if(userCorrect === answersFG[i]) {
+    let userCorrect = guessingGame2(questionsFG[i], answersFG[i])
+    if(userCorrect) {
         alert('Correct');
         console.log(userCorrect);
     } else {
@@ -54,8 +47,6 @@ for (let i = 0; i < questionsFG.length; i++) {
         console.log(userCorrect);
     }
 }
-guessingGame2();
-
 
 let thankYou = alert("Thats it! Thank you " + userName + " for taking the time to answer these questions.");
 

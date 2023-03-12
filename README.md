@@ -8,7 +8,20 @@ I use HTML and CSS to properly structure and style my website, and JavaScript to
 
 ### Lighthouse Accessability Report Score
 
-My score was 100.
+Lab 01
+![lab1pic](img/lab01validator.png)
+
+Lab 02
+![lab2pic](img/lab02lighthouse.png)
+
+Lab 03
+![lab3pic](img/lighthouselab03.png)
+
+Lab 04
+![lab4pic](img/lighthouselab04.png)
+
+Lab 05
+![lab5pic](img/lighthouselab04.png)
 
 ### Reflections and Comments
 
